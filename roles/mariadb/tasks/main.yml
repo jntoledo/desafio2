@@ -11,6 +11,11 @@
     state: present
     update_cache: yes
 
+- name: "Verificando se o  MySQL-python esta presente"
+  pip:
+    name: MySQL-python
+    state: present
+
 - name: "Verificando se o  pymysql esta presente"
   pip:
     name: PyMySQL
